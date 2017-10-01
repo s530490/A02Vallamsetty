@@ -1,0 +1,39 @@
+body{
+    text-align:center;
+    background-image: url("back.jpg");
+    margin:25px 50px 75px 100px;
+    }
+header{
+    color:lightyellow;
+    font-family:"Arial";
+    }
+.menu{
+        list-style-type: none;
+         background-color: green;
+         padding-bottom: 2px;
+         padding-left: 4px;
+         padding-right: 5px;
+         overflow: hidden;
+         border: 1px solid black;
+     }
+     li {
+        float: left;
+        padding: 25px 90px;
+        margin: 2px;
+        border-right: 2px;
+        border-right-color: red;
+        font-size: 20px;
+        }
+    
+    li a {
+        display: block;
+        color: aqua ;
+        text-align: center;
+       }
+    li a:hover {
+        background-color: orange;
+    }
+    .contact{
+        color:white;
+        font-size: 20px;
+        }

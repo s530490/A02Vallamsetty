@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Age calculator</title>
+        <link type="text/css" rel="stylesheet" href="appcalculator.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="age.js"></script>
+ </head>
+    <body>
+        <div class="container-fluid">
+        <header>
+           <h1> Age Calculator</h1>
+        </header>
+        <ul class="menu" >
+                <div class="row">
+                  <div class="col-md-4">
+                <li><a href="index.html">Home</a></li>
+                  </div>
+                  <div class="col-md-4">
+                <li><a href="agecalculator.html">Age Calculator</a></li>
+                  </div>
+                  <div class="col-md-4">
+                <li><a href="contact.html">Contact</a></li>
+                  </div>
+                </div>
+               </ul>
+        <div> 
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+             <form style="color:white">
+                   <table>
+                             <tr>
+                             <th>
+                              <span>Enter your Details</span><br/>
+                             </th>
+                            </tr>
+                            <tr class="spaceUnder">
+                            <td>Enter your name:</td>
+                            <td>
+                            <input type="text" id="name">
+                            </td>
+                          </tr>
+                            <tr class="spaceUnder">
+                                <td>Gender</td>
+                                <td style="text-align:left;">
+                                    <input type="radio" name="gender" value="Mr" checked/> Male<br/>
+                                    <input type="radio" name="gender" value="Miss"/> Female<br/>
+                               </td>
+                              </tr>
+                            <tr>
+                                <td>
+                                    <span>Select your Date of Birth</span><br/>
+                                </td>
+                            </tr>
+                             <tr class="spaceUnder">
+                            <td> Day :</td>
+                            <td><select id="daydropdown"></select> </td><br/>
+                             </tr>
+                             <tr class="spaceUnder">
+                             <td> Month :</td>
+                             <td><select id="monthdropdown"></select> </td><br/>
+                             </tr>
+                             <tr class="spaceUnder">
+                            <td> Year : </td>
+                            <td><select id="yeardropdown"></select></td><br/>
+                             </tr>
+                            <tr>
+   <td> <input type="button" value="Calculate Age" class="submit" style="color:black;text-align:center" onclick="app.agecalc()"/></input></td>
+                             </tr>
+                        </table>
+                        <table>
+                        <br/>
+                        <br/>
+                        <tr id="hideit">
+                        <td >Your Age is displayed here :</td>
+                        <td><input type="text" id="textarea1"></td></input>
+                        </tr>
+                         </table> 
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        </div>
+        <footer>
+                <time datetime="2017-09-16"> September 16 Revanth.V </time> 
+                <script>window.onload=function(){
+                  app.populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+                  }
+                </script>
+        </footer>
+        </div>
+    </body>
+</html>
